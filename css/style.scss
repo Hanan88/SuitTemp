@@ -1,0 +1,310 @@
+$pragraphColor: #8C8C8C;
+$mainwidth: 100%;
+
+/*==============GLobal=====================*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo';
+    height: 2000px
+        
+}
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.layout
+{
+    background: rgba(0,0,0,0.53);
+    width: $mainwidth;
+    min-height: 100%;
+    position: absolute;
+}
+ul
+{
+    list-style: none;
+}
+button
+{
+    width: 140px;
+    height: 50px;
+    color: rgb(153, 136, 123);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.4s ease;
+    &:hover{
+    background: #0BDDA9;
+    color: #FFF;
+    }
+}
+
+p
+{
+    color: $pragraphColor; 
+    line-height: 33px;
+}
+h1,h2,h3,h4,h5{color: #656565}
+section
+{
+    margin-top: 90px;
+    overflow: hidden;
+}
+
+/*===============header==============*/
+header
+{
+    background: url(../images/banner2.jpg) no-repeat center center;
+    background-size: auto auto;
+    background-size: cover;
+    width: $mainwidth;
+    min-height: 661px;
+    background-position-y: -239px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    ul {
+        li{
+    float: left;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 0;
+    &:hover{
+    border-bottom: 1px solid #e3a6a6;
+    color: #e3a6a6;
+    padding: 10px 0;
+            }
+        }
+        a{
+    text-decoration: none;
+    color: #fff;
+        }
+    }
+}
+.logo
+{
+    width: 30%;
+    float: left;
+}
+.menu-bar
+{
+    width: 60%;
+    float: left;
+    margin-top: 83px;
+    padding-left: 120px;
+}
+
+.search
+{
+    width: 10%;
+    float: left;
+}
+/*===============about==============*/
+.mainSide{
+    width: $mainwidth/2;
+    float: left;
+}
+.about
+{
+    margin-bottom: 30px;
+}
+.left-side, .right-side
+{
+    @extend .mainSide;
+}
+    
+.content-about
+{
+    width: 74%;
+    margin: 140px auto;
+    p
+{
+    line-height: 33px;
+}
+}
+
+/*==================Category================*/
+.col
+{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 45px;
+    .slide{
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+    border: 1px solid #DDF;
+    padding: 8px;
+    }
+    h4{    
+    width: 35%;
+    float: left;
+    margin-left: 2px;
+    }
+}
+
+.slide {
+    img{
+    width: 100%;
+    height: 252px;
+    }
+    .details{
+    margin: 17px auto;
+    }
+}
+
+/*==================*/
+/*==================*/
+/*==================*/
+.pop-up {
+  height: auto;
+    width: 35%;
+    margin: -12% 0 0 26%;
+    background: rgba(255, 255, 255, 0.94);
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #000;
+    padding: 15px 0px 20px 20px;
+    .exit{
+    border-radius: 7px;
+    margin-left: 90%;
+    color: $pragraphColor;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+    h3{
+    color: #656565;
+    }
+    p{
+    width: 75%;
+    color: $pragraphColor;
+    }
+    .case{
+    color: green;
+    font-size: 12px;
+    }
+    h4{
+    display: inline;
+    margin-left: 5px;
+    font-size: 20px
+    }
+}
+
+
+/*===========================HowToRent===============================*/
+.steps{
+    width: 100%;
+    text-align: center;
+    button{
+    display: inline;
+    margin-top: 45px;
+    }
+}
+.step{
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+    span{
+    width: 33px;
+    float: left;
+    display: block;
+    min-height: 126px;
+    font-size: 38px;
+    color: #656565;
+    }
+}
+#rent{
+    margin-top: 10%;
+}
+/*=========================Footer=================================*/
+footer{
+    width: 100%;
+    background: #292828;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 100px;
+    ul{
+    width: 32%;
+    float: left;
+    h4{
+    font-size: 20px;
+        }
+    a{
+    text-decoration: none;
+    color: $pragraphColor
+        }
+    }
+    li{
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    color: $pragraphColor;
+    }
+    .social{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40px;
+    p{
+    width: 40%;
+    font-size: 40px;
+    display: inline;
+    margin-right: 35px;
+    span{
+    font-size: 23px;
+        }
+        }
+    }
+    .fab{
+    width: 38px;
+    font-size: 30px;
+    color: $pragraphColor;
+    margin-right: 10px
+    }
+    .form-contact{
+    padding-top: 15px;
+    label{
+    font-size: 25px;
+    color: #FFF;
+    margin-right: 10px
+        }
+    input{
+    margin-top: -63px;
+    margin-right: 10px;
+        }
+    button{
+    display: inline;
+    margin-top: -65px;
+    margin-left: 17px
+        }
+    }
+    .copyright{
+    width: 60%;
+    color: $pragraphColor;
+    margin-left: 21%;
+    margin-top: 20px;
+    h5
+        {
+    display: inline;
+    margin-left: 10px
+        }
+    }
+}
+footer .form-contact input ,textarea
+{
+    width: 240px;
+    height: 50px;
+    color: rgb(153, 136, 123);
+    border: none;
+    border-radius: 10px;
+}
